@@ -2,10 +2,10 @@
   "name": "jokebot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node main.js",
-    "devStart": "nodemon main.js"
+    "start": "node bot.js",
+    "devStart": "nodemon bot.js"
   },
   "keywords": [],
   "author": "",
