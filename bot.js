@@ -15,7 +15,7 @@ const fetch = require("node-fetch");
 // logs message when the bot is ready
 client.on("ready", () => {
     // show a presence message for the bot
-    client.user.setPresence({ game: { name: '$help for commands' }, status: 'online' })
+    // client.user.setPresence({ game: { name: '$help for commands' }, status: 'online' })
     // show that the bot is ready with current time
     console.log(`${new Date().toLocaleString()}: Bot is ready!`);
 })
