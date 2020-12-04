@@ -14,10 +14,14 @@ const fetch = require("node-fetch");
 
 // logs message when the bot is ready
 client.on("ready", () => {
+    // number of servers bot is registered in
+    const guildNum = client.guilds.cache.size;
     // show a presence message for the bot
-    // client.user.setPresence({ game: { name: '$help for commands' }, status: 'online' })
+    client.user.setActivity(`$help | Active in ${guildNum} servers`, {type: "PLAYING"})
     // show that the bot is ready with current time
     console.log(`${new Date().toLocaleString()}: Bot is ready!`);
+    
+    console.log()
 })
 
 // prefix for commands
